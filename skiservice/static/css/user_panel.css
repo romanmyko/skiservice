@@ -1,0 +1,45 @@
+ /* Стилі для заголовків */
+ h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стилі для форми */
+form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Стилі для відображення книг в наявності */
+.available-books {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}

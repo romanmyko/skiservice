@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'index' %}">Вийти</a>
+   
+    </nav>
+
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Навчальний проект Бібліотека</p>
+    </footer>
+</body>
+
+</html>

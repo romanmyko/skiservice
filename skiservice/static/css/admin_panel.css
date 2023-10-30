@@ -1,0 +1,54 @@
+/* Стилі для заголовків */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стилі для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Стилі для рядків таблиць */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Стилі для форми додавання книги */
+.add-book-form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Стилі для форми додавання користувача */
+.add-user-form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+

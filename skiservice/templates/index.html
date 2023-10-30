@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}librery{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="page-container">
+    <h1 class="main-heading">Ласкаво просимо до нашої бібліотеки</h1>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+    <h2>Оберіть ваш статус:</h2>
+    <div class="login-form-container">
+        <form method="post" class="login-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+    <a href="{% url 'register' %}" class="registration-link">Новий користувач</a>
+</div>
+{% endblock %}

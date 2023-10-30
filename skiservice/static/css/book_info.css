@@ -1,0 +1,53 @@
+/* Centered header with blue color */
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Remove bullets and padding from unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for the authors list */
+ul.authors {
+    margin-bottom: 20px;
+}
+
+/* Style for individual authors */
+li.author {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style for the books list */
+ul.books {
+    margin-top: 5px;
+}
+
+/* Style for individual books */
+li.book {
+    color: #007bff;
+    margin-top: 5px;
+}
+
+/* Centered links with blue background */
+a {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 20px auto; /* Center horizontally */
+    width: 150px;
+}
+
+/* Centered and blue-colored text for headers and paragraphs */
+h2, p, h3 {
+    color: #007bff;
+    text-align: center;
+}
