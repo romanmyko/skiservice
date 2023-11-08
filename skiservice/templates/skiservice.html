@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Вибір спорядження</h1>
+
+<a href="{% url 'logout' %}">Вийти</a>
+
+
+{% endblock %}

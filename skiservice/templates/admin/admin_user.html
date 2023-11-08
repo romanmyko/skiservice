@@ -1,0 +1,38 @@
+{% extends 'admin/base_admin.html' %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Вибір спорядження</h1>
+
+<table>
+    <h3>Замовники</h3>
+    <thead>
+        <tr>
+            <th>ID Order</th>
+            <th>Book</th>
+            <th>User</th>
+            <th>Date (start-end)</th>
+            <th>Delete</th>
+            <th>Select</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.id }}</td>
+            <td>Book :{{ order.book.name}}</td>
+            <td>User name:{{order.user.first_name}} User email:{{order.user.email}} User ID{{order.user.id}}</td>
+            <td>{{ order.created_at }}-{{order.end_at}}</td>
+            <td><a href="">Delete</a></td>
+            <td><a href="">close</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -15,6 +15,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+
+LOGOUT_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = '/select/' # Вкажіть URL, на який потрібно перенаправити користувача після входу
+LOGIN_URL = 'index'  # Вкажіть URL для сторінки входу
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    # Додайте інші методи автентифікації, якщо вони необхідні
+]
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
@@ -85,6 +95,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

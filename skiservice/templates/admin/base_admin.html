@@ -9,8 +9,10 @@
 
 <body>
     <nav>
-        <a href="{% url 'index' %}">Вийти</a>
-   
+        <a href="{% url 'logout' %}">Вийти</a>
+        <a href="{% url 'staff'  slug='staff' %}">Спорядження</a>
+        <a href="{% url 'order'  slug='order' %}">Замовлення</a>
+        <a href="">Замовники</a>
     </nav>
 
     <header>
@@ -18,11 +20,12 @@
     </header>
 
     <main>
+        
         {% block content %}{% endblock %}
     </main>
 
     <footer>
-        <p>Навчальний проект Бібліотека</p>
+        <p>Панель Адміністратора майстерні і прокату</p>
     </footer>
 </body>
 
